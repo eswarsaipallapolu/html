@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>form creation</title>
+		<style>
+			body{
+				background-color: aqua;
+			}
+			table {
+  				 margin-left:auto; 
+ 				 margin-right:auto;
+			}
+
+		</style>
+		<script>
+			function fun1(){
+			 var x =document.getElementById("name");
+			document.write("Name:-"+x.value);
+			var m=document.getElementById("text");
+			document.write("Phone No:-"+m.value);
+			}
+		</script>
+		
+	</head>
+	<body>
+		<form method="post" action="">
+		<table>
+			<caption><b>REGISTERATION FORM</b></caption>
+			<tr>
+				<td>Name:-</td>
+				<td><input type="text" id="name" name="nam" placeholder="Enter Your name" required/></td>
+			</tr>
+			<tr>
+				<td>Phone No:-</td>
+				<td><input type="number" id="num" name="num" placeholder="Enter Your Phone No:"  required/></td>
+			</tr>
+			<tr>
+				<td>Choice Of Course:-</td>
+				<td><input type="radio" id="bachelor" name="course1">Bachelor</td>
+				<td><input type="radio" id="master" name="course1">Master</td>
+			</tr>
+			<tr>
+				<td>Description:-</td>
+				<td><textarea id="text" name="tex" rows="4" cols="50" required></textarea></td>
+			</tr>
+			<tr>
+				<td>Subject Interest:-</td>
+				<td><input type="checkbox" id="ai" name="ai">AI</td>
+				<td><input type="checkbox" id="ml" name="ml">ML</td>
+			</tr>
+			<tr>
+					<td><input type="submit" value="submit" onclick="fun1()"/></td>
+					<td><input type="reset" value="reset"></td>
+
+			</tr>
+		</table>
+		</form>
+	</body>
+</html>
